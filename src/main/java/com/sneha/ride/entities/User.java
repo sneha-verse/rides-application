@@ -5,7 +5,6 @@ import com.sneha.ride.requests.UserRequest;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 
 import java.util.List;
 
@@ -19,7 +18,6 @@ public class User {
     private Integer id;
     private String firstName;
     private String lastName;
-    @NonNull
     private String email;
     private String password;
     private String phoneNumber;

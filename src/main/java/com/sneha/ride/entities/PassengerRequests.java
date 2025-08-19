@@ -3,11 +3,8 @@ package com.sneha.ride.entities;
 
 import com.sneha.ride.requests.PassengerDTO;
 import jakarta.persistence.*;
-import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -15,7 +12,6 @@ import java.time.LocalDateTime;
 @Entity
 
 @NoArgsConstructor
-@RequiredArgsConstructor
 public class PassengerRequests {
 
     @Id
@@ -28,7 +24,6 @@ public class PassengerRequests {
     @ManyToOne
     private Rides rideId;
 
-    @NonNull
     private LocalDateTime startTime;
     private LocalDateTime dropTime;
     private LocalDateTime pickedUpTime;
